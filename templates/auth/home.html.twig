@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="card">
+        <h2 class="text-2xl font-bold mb-4 text-center">Welcome!</h2>
+        <p class="text-gray-600 mb-4">You have successfully logged in.</p>
+        <a href="{{ path('app_logout') }}" class="btn-primary w-full text-center">Logout</a>
+    </div>
+
+    <p>
+    <a href="{{ path('app_forgot_password') }}">Forgot Password</a>
+</p>
+
+
+{% endblock %}

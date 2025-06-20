@@ -3,3 +3,19 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+auth_register:
+    path: /register
+    controller: App\Controller\AuthController::register
+
+otp_validate:
+    path: /validate-otp
+    controller: App\Controller\AuthController::validateOtp
+
+login:
+    path: /login
+    controller: App\Controller\AuthController::login
+
+home:
+    path: /home
+    controller: App\Controller\AuthController::home

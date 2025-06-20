@@ -1,0 +1,15 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Symfony Authentication API
+            description: API for user registration, OTP verification, login, and logout
+            version: 1.0.0
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+    areas:
+        default:
+            path_patterns: ['^/api']
