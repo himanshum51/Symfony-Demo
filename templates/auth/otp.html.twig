@@ -7,7 +7,7 @@
         <h2 class="text-2xl font-bold mb-4 text-center">Verify OTP</h2>
         <p class="text-gray-600 mb-4">Enter the OTP sent to your email. It is valid for 2 minutes.</p>
         <form id="otpForm" action="{{ path('app_otp_verify') }}" method="post">
-            <div class="mb-4">
+            <div class="mb-4"> 
                 <label for="otp" class="block text-sm font-medium text-gray-700">OTP Code</label>
                 <input type="text" id="otp" name="otp" class="mt-1 p-2 w-full border rounded" required>
             </div>
